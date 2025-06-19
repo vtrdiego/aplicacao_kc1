@@ -35,7 +35,7 @@ Etapa 1 (Ativar a API via console RStudio):<br>
 
 library(plumber)<br>  
 r <- plumb("C:/Users/victor.diego/Desktop/trabalho_G2/plumber.R")  
-r$run(port = 5000)  
+r$run(port = 8000)  
 
 Etapa 2 (Testar input de métricas via POST através de um segundo console RStudio):  
 
