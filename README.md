@@ -31,18 +31,18 @@ Esse script executa as seguintes tarefas no console RStudio:
 Esse script implementa uma API via console RStudio que utiliza um modelo de regressão linear, no qual é possível 
 inserir métricas para previsão de NUMDEFECTS. A utilização da API é feita através das seguintes etapas:
 
-Etapa 1 (Ativar a API via console RStudio):
+Etapa 1 (Ativar a API via console RStudio):<br>
 
 library(plumber)<br>
-r <- plumb("C:/Users/victor.diego_ipnet.IPM658/Desktop/trabalho_G2/plumber.R")
-r$run(port = 8000)
+r <- plumb("C:/Users/victor.diego/Desktop/trabalho_G2/plumber.R")
+r$run(port = 5000)
 
 Etapa 2 (Testar input de métricas via POST através de um segundo console RStudio):
 
 library(httr)<br>
 library(jsonlite)
 
-- Criar o JSON com os valores das métricas:
+- Criar o JSON com os valores das métricas:<br>
 entrada <- list(
   COUPLING_BETWEEN_OBJECTS = 10,
   DEPTH_INHERITANCE = 2,
@@ -53,14 +53,14 @@ entrada <- list(
   sumLOC_TOTAL = 400
 )
 
-- Fazer a requisição POST:
+- Fazer a requisição POST:<br>
 resposta <- POST(
   url = "http://localhost:8000/prever",
   body = toJSON(entrada, auto_unbox = TRUE),
   encode = "json"
 )
 
-- Ver resultado:
+- Ver resultado:<br>
 content(resposta, as = "parsed", simplifyVector = TRUE)
 
 **app.R**
