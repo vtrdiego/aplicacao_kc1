@@ -7,12 +7,12 @@ Esse script executa as seguintes tarefas no console RStudio:
 1)Análise Estatística Descritiva  
 • Carrega o dataset.  
 • Apresenta para cada coluna numérica:  
-    o Medidas de tendência central (média, mediana, moda),  
-    o Medidas de dispersão (desvio padrão, mínimo, máximo, amplitude).  
+     o Medidas de tendência central (média, mediana, moda),  
+     o Medidas de dispersão (desvio padrão, mínimo, máximo, amplitude).  
 • Gera visualizações:  
-    o Histogramas com curvas de densidade,  
-    o Boxplots,  
-    o Testes de normalidade (Shapiro-Wilk ou Kolmogorov-Smirnov).  
+     o Histogramas com curvas de densidade,  
+     o Boxplots,  
+     o Testes de normalidade (Shapiro-Wilk ou Kolmogorov-Smirnov).  
 
 2)Análise de Correlação  
 • Gera uma matriz de correlação entre todas as variáveis numéricas.  
