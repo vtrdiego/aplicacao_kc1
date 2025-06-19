@@ -12,7 +12,7 @@ Esse script executa as seguintes tarefas no console RStudio:
 * Gera visualizações:  
      • Histogramas com curvas de densidade,  
      • Boxplots,  
-     • Testes de normalidade (Shapiro-Wilk ou Kolmogorov-Smirnov).  
+     • Testes de normalidade (Utilizando Shapiro-Wilk).  
 
 2)Análise de Correlação  
 * Gera uma matriz de correlação entre todas as variáveis numéricas.  
