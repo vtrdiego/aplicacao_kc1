@@ -13,11 +13,7 @@ variaveis_predictoras <- names(dados)[names(dados) != "NUMDEFECTS"]
 formula_modelo <- as.formula(paste("NUMDEFECTS ~", paste(variaveis_predictoras, collapse = " + ")))
 modelo <- lm(formula_modelo, data = dados)
 
-#* @apiTitle API Regressão Múltipla - Previsão NUMDEFECTS
-
 #* Faz previsão de NUMDEFECTS com base nas métricas fornecidas
-#* @param body:json JSON contendo os valores das métricas
-#* @post /prever
 function(req) {
   # Ler o JSON do corpo da requisição
   entrada <- jsonlite::fromJSON(req$postBody)
