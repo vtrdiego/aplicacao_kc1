@@ -15,27 +15,27 @@ Esse script executa as seguintes tarefas no console RStudio:
      • Testes de normalidade (Shapiro-Wilk ou Kolmogorov-Smirnov).  
 
 2)Análise de Correlação  
-• Gera uma matriz de correlação entre todas as variáveis numéricas.  
-• Interpreta os resultados, destacando quais variáveis possuem maior correlação com NUMDEFECTS.  
-• Cria gráficos de dispersão com linha de tendência para as variáveis mais correlacionadas com NUMDEFECTS.  
+* Gera uma matriz de correlação entre todas as variáveis numéricas.  
+* Interpreta os resultados, destacando quais variáveis possuem maior correlação com NUMDEFECTS.  
+* Cria gráficos de dispersão com linha de tendência para as variáveis mais correlacionadas com NUMDEFECTS.  
 
 3)Regressão Linear  
-• Contém um modelo de regressão linear simples, com NUMDEFECTS como variável dependente, que apresenta:  
-    o Coeficientes estimados,  
-    o R2 e R2 ajustado,  
-    o Valores-p,  
-    o Diagnóstico dos resíduos.  
+* Contém um modelo de regressão linear simples, com NUMDEFECTS como variável dependente, que apresenta:  
+     • Coeficientes estimados,  
+     • R2 e R2 ajustado,
+     • Valores-p,  
+     • Diagnóstico dos resíduos.  
 
 **plumber.R**
 
-Esse script implementa uma API via console RStudio que utiliza um modelo de regressão linear, no qual é possível  
+Esse script implementa uma API via console RStudio que utiliza um modelo de regressão linear, no qual é possível<br>  
 inserir métricas para previsão de NUMDEFECTS. A utilização da API é feita através das seguintes etapas:
 
 Etapa 1 (Ativar a API via console RStudio):<br>  
 
 library(plumber)<br>  
 r <- plumb("C:/Users/victor.diego/Desktop/trabalho_G2/plumber.R")  
-r$run(port = 5000)  
+r$run(port = 8000)  
 
 Etapa 2 (Testar input de métricas via POST através de um segundo console RStudio):  
 
@@ -67,9 +67,9 @@ content(resposta, as = "parsed", simplifyVector = TRUE)
 
 Esse script cria uma aplicação no qual utiliza a lógica do modelo de regressão e cria uma interface interativa com Shiny que permita ao usuário:  
 
-•Inserir valores para as métricas do modelo,  
-•Visualizar a previsão de NUMDEFECTS,  
-•Ver os gráficos utilizados na análise.  
+* Inserir valores para as métricas do modelo,  
+* Visualizar a previsão de NUMDEFECTS,  
+* Ver os gráficos utilizados na análise.  
 
 # Link da aplicação disponibilizada via Shiny:  
 https://victor-diego.shinyapps.io/shiny_app_g2/
