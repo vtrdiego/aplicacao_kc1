@@ -28,7 +28,7 @@ Esse script executa as seguintes tarefas no console RStudio:
 
 **plumber.R**
 
-Esse script implementa uma API via console RStudio que utiliza um modelo de regressão linear, no qual é possível<br>  
+Esse script implementa uma API via console RStudio que utiliza um modelo de regressão linear, no qual é possível 
 inserir métricas para previsão de NUMDEFECTS. A utilização da API é feita através das seguintes etapas:
 
 Etapa 1 (Ativar a API via console RStudio):<br>  
