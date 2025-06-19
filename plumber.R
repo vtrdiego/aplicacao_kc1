@@ -4,7 +4,7 @@ library(readxl)
 library(plumber)
 
 # Carregar o dataset
-dados <- read_excel("C:/Users/victor.diego_ipnet.IPM658/Desktop/trabalho_G2/dataset_KC1_classlevel_numdefect.xlsx")
+dados <- read_excel("C:/Users/victor.diego/Desktop/trabalho_G2/dataset_KC1_classlevel_numdefect.xlsx")
 
 # Definir as variáveis preditoras (todas as colunas exceto NUMDEFECTS)
 variaveis_predictoras <- names(dados)[names(dados) != "NUMDEFECTS"]
