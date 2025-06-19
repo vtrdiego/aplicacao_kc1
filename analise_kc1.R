@@ -10,7 +10,7 @@ library(broom)
 # 1) Análise Estatística Descritiva ----
 
 # Carregar o dataset
-dados <- read_excel("C:/Users/victor.diego_ipnet.IPM658/Desktop/topicas2/dataset_KC1_classlevel_numdefect.xlsx")
+dados <- read_excel("C:/Users/victor.diego/Desktop/topicas2/dataset_KC1_classlevel_numdefect.xlsx")
 
 # Exibir estrutura
 glimpse(dados)
