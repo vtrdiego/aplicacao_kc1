@@ -1,4 +1,3 @@
-# Carregar pacotes
 library(tidyverse)
 library(readxl)
 library(plumber)
