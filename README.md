@@ -33,13 +33,13 @@ inserir métricas para previsão de NUMDEFECTS. A utilização da API é feita a
 
 Etapa 1 (Ativar a API via console RStudio):
 
-library(plumber)
+library(plumber)<br>
 r <- plumb("C:/Users/victor.diego_ipnet.IPM658/Desktop/trabalho_G2/plumber.R")
 r$run(port = 8000)
 
 Etapa 2 (Testar input de métricas via POST através de um segundo console RStudio):
 
-library(httr)
+library(httr)<br>
 library(jsonlite)
 
 - Criar o JSON com os valores das métricas:
