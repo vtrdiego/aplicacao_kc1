@@ -34,7 +34,6 @@ inserir métricas para previsão de NUMDEFECTS. A utilização da API é feita a
 Etapa 1 (Ativar a API via console RStudio):
 
 library(plumber)
-
 r <- plumb("C:/Users/victor.diego_ipnet.IPM658/Desktop/trabalho_G2/plumber.R")
 r$run(port = 8000)
 
@@ -73,4 +72,4 @@ o Visualizar a previsão de NUMDEFECTS,
 o Ver os gráficos utilizados na análise.
 
 # Link da aplicação disponibilizada via Shiny:
-
+https://victor-diego.shinyapps.io/shiny_app_g2/
