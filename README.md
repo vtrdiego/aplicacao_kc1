@@ -40,6 +40,7 @@ r$run(port = 8000)
 Etapa 2 (Testar input de métricas via POST através de um segundo console RStudio):  
 
 library(httr) 
+
 library(jsonlite)  
 
 - Criar o JSON com os valores das métricas:<br>  
