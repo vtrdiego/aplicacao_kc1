@@ -39,7 +39,7 @@ r$run(port = 8000)
 
 Etapa 2 (Testar input de métricas via POST através de um segundo console RStudio):  
 
-library(httr)<br>  
+library(httr) 
 library(jsonlite)  
 
 - Criar o JSON com os valores das métricas:<br>  
@@ -65,7 +65,7 @@ content(resposta, as = "parsed", simplifyVector = TRUE)
 
 **app.R**
 
-Esse script cria uma aplicação no qual utiliza a lógica do modelo de regressão e cria uma interface interativa com Shiny que permita ao usuário:  
+Esse script cria uma aplicação no qual utiliza a lógica do modelo de regressão e cria uma interface interativa com Shiny que permite ao usuário:  
 
 * Inserir valores para as métricas do modelo,  
 * Visualizar a previsão de NUMDEFECTS,  
